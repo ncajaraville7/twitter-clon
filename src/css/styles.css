@@ -210,3 +210,24 @@ p {
 
 .tweetIcon-favorito {
   color: red; }
+
+.navTel {
+  position: absolute;
+  z-index: 10000;
+  bottom: 0;
+  width: 100%; }
+  .navTel__icons {
+    display: none;
+    border-top: 1px solid #d6d6d6; }
+    @media screen and (max-width: 625px) {
+      .navTel__icons {
+        display: flex;
+        justify-content: space-around; } }
+    .navTel__icons li {
+      font-size: 2rem;
+      cursor: pointer;
+      transition: .3s; }
+      .navTel__icons li:first-of-type {
+        color: #1d9bf0; }
+      .navTel__icons li:hover {
+        border-bottom: 3px solid #1d9bf0; }

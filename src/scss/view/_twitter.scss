@@ -262,3 +262,33 @@
     color: rgb(255, 0, 0);
 }
 
+.navTel {
+    position: absolute;
+    z-index: 10000;
+    bottom: 0;
+    width: 100%;
+
+    &__icons {
+        display: none;
+        border-top: 1px solid $borderColor;
+    
+        @media screen and(max-width: 625px) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        & li {
+            font-size: 2rem;
+            cursor: pointer;
+            transition: .3s;
+
+            &:first-of-type {
+                color: $twitterColor;
+            }
+
+            &:hover {
+                border-bottom: 3px solid $twitterColor;
+            }
+        }
+    }
+}
