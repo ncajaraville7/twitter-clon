@@ -133,8 +133,8 @@
 
     & img {
         border-radius: 50%;
-            height: 5rem;
-            width: 5.5rem;
+        height: 5rem;
+        width: 5.5rem;
     }
 
     .tweet__formulario{
@@ -174,3 +174,78 @@
     display: flex;
     flex-direction: column;
 }
+
+.tweets {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-bottom: 1px solid $borderColor;
+
+    &__contenido {
+        display: flex;
+        gap: 1rem;
+
+        &__imagen img {
+            border-radius: 50%;
+            height: 5rem;
+            width: 5rem;
+        }
+
+        &__data p {
+            font-size: 1.5rem;
+        }
+
+        &__data__usuario {
+            display: flex;
+
+            & p:first-of-type {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            & p:last-of-type {
+                font-size: 1.2rem;
+                margin-left: 5px;
+                color: rgb(163, 163, 163);
+            }
+        }
+    }
+
+    &__botones {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+
+        &__boton {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            & p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.tweetIcon-respuesta,
+.tweetIcon-retweet,
+.tweetIcon-favorito,
+.tweetIcon-compartir {
+    font-size: 2rem;
+    margin-right: 3px;
+}
+
+.tweetIcon-respuesta,
+.tweetIcon-compartir {
+    color: rgb(163, 163, 163);
+}
+
+.tweetIcon-retweet {
+    color: rgb(6, 172, 0);
+}
+
+.tweetIcon-favorito {
+    color: rgb(255, 0, 0);
+}
+

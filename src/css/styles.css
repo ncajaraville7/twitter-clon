@@ -21,6 +21,10 @@ ul {
 p {
   margin: 0; }
 
+.btnTweetDisabled {
+  opacity: .5;
+  cursor: not-allowed !important; }
+
 .header {
   max-width: 275px;
   width: 100%;
@@ -148,3 +152,54 @@ p {
 .lista-tweets {
   display: flex;
   flex-direction: column; }
+
+.tweets {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  border-bottom: 1px solid #d6d6d6; }
+  .tweets__contenido {
+    display: flex;
+    gap: 1rem; }
+    .tweets__contenido__imagen img {
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem; }
+    .tweets__contenido__data p {
+      font-size: 1.5rem; }
+    .tweets__contenido__data__usuario {
+      display: flex; }
+      .tweets__contenido__data__usuario p:first-of-type {
+        font-weight: bold;
+        font-size: 1.2rem; }
+      .tweets__contenido__data__usuario p:last-of-type {
+        font-size: 1.2rem;
+        margin-left: 5px;
+        color: #a3a3a3; }
+  .tweets__botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    .tweets__botones__boton {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      .tweets__botones__boton p {
+        font-size: 1.2rem; }
+
+.tweetIcon-respuesta,
+.tweetIcon-retweet,
+.tweetIcon-favorito,
+.tweetIcon-compartir {
+  font-size: 2rem;
+  margin-right: 3px; }
+
+.tweetIcon-respuesta,
+.tweetIcon-compartir {
+  color: #a3a3a3; }
+
+.tweetIcon-retweet {
+  color: #06ac00; }
+
+.tweetIcon-favorito {
+  color: red; }

@@ -13,7 +13,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: $fuente;
 }
 
 ul {
@@ -24,4 +24,9 @@ ul {
 
 p {
     margin: 0;
+}
+
+.btnTweetDisabled {
+    opacity: .5;
+    cursor: not-allowed !important;
 }
