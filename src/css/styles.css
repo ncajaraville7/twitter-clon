@@ -7,6 +7,8 @@ html {
   box-sizing: inherit; }
 
 body {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -69,7 +71,8 @@ p {
 .perfil {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1.3rem; }
   .perfil__data {
     display: flex; }
     .perfil__data__imagen img {
@@ -88,3 +91,60 @@ p {
     margin-right: 2rem;
     font-size: 1.8rem;
     cursor: pointer; }
+
+.main {
+  max-width: 600px;
+  width: 100%;
+  height: 100vh;
+  border-right: 1px solid #d6d6d6; }
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #d6d6d6; }
+  .inicio p {
+    font-size: 2.3rem;
+    font-weight: bold; }
+  .inicio svg {
+    width: 2.3rem;
+    height: 2.3rem; }
+
+.tweet {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  border-bottom: 1px solid #d6d6d6;
+  height: 15rem; }
+  .tweet img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5.5rem; }
+  .tweet .tweet__formulario {
+    width: 100%; }
+    .tweet .tweet__formulario textarea {
+      width: 100%;
+      height: 58px;
+      border: none;
+      outline: none;
+      font-size: 1.8rem;
+      font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      resize: none; }
+    .tweet .tweet__formulario__btnSeccion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #d6d6d6; }
+      .tweet .tweet__formulario__btnSeccion__btns svg {
+        color: #1d9bf0;
+        font-size: 2rem;
+        margin-right: 15px;
+        cursor: pointer; }
+
+.clon {
+  width: 100%; }
+
+.lista-tweets {
+  display: flex;
+  flex-direction: column; }

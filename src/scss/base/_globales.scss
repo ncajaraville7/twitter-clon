@@ -9,6 +9,8 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     padding: 0;
     margin: 0;
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

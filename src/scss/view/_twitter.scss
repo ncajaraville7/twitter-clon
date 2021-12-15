@@ -66,6 +66,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.3rem;
 
     &__data {
         display: flex;
@@ -98,3 +99,78 @@
     }
 }
 
+.main {
+    max-width: 600px;
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid $borderColor;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid $borderColor;
+
+    & p {
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+
+    & svg {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
+
+.tweet {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid $borderColor;
+    height: 15rem;
+
+    & img {
+        border-radius: 50%;
+            height: 5rem;
+            width: 5.5rem;
+    }
+
+    .tweet__formulario{
+        width: 100%;
+
+        & textarea {
+            width: 100%;
+            height: 58px;
+            border: none;
+            outline: none;
+            font-size: 1.8rem;
+            font-family: $fuente;
+            resize: none;
+        }
+
+        &__btnSeccion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid $borderColor;
+
+            &__btns svg {
+                color: $twitterColor;
+                font-size: 2rem;
+                margin-right: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.clon {
+    width: 100%;
+}
+
+.lista-tweets {
+    display: flex;
+    flex-direction: column;
+}
