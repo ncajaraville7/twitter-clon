@@ -263,10 +263,11 @@
 }
 
 .navTel {
-    position: absolute;
+    position: fixed;
     z-index: 10000;
     bottom: 0;
     width: 100%;
+    background-color: $blanco;
 
     &__icons {
         display: none;

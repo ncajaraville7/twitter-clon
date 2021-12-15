@@ -212,10 +212,11 @@ p {
   color: red; }
 
 .navTel {
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #fff; }
   .navTel__icons {
     display: none;
     border-top: 1px solid #d6d6d6; }
