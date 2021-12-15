@@ -1,0 +1,90 @@
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.header {
+  max-width: 275px;
+  width: 100%;
+  border-right: 1px solid #d6d6d6; }
+  .header__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 18rem; }
+  .menu__logo i {
+    font-size: 3rem;
+    color: #1d9bf0;
+    padding: 1.8rem; }
+  .menu__links {
+    margin-top: 1rem; }
+    .menu__links li {
+      padding: 1.5rem;
+      font-size: 1.8rem;
+      cursor: pointer; }
+      .menu__links li i {
+        margin-right: 2rem; }
+    .menu__links .activo {
+      color: #1d9bf0; }
+
+.twittear {
+  background-color: #1d9bf0;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  width: 65%;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: .3s; }
+  .twittear:hover {
+    background-color: #1e8bd4; }
+
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .perfil__data {
+    display: flex; }
+    .perfil__data__imagen img {
+      border-radius: 50%;
+      height: 4.5rem;
+      width: 4.5rem;
+      margin-right: 1rem; }
+    .perfil__data__usuario {
+      margin-top: 5px; }
+      .perfil__data__usuario span {
+        font-weight: bold;
+        font-size: 1.2rem; }
+      .perfil__data__usuario p {
+        font-size: 1.1rem; }
+  .perfil i {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    cursor: pointer; }

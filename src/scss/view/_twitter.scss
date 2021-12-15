@@ -1,0 +1,100 @@
+.header {
+    max-width: 275px;
+    width: 100%;
+    border-right: 1px solid $borderColor;
+    
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 18rem;
+
+    &__logo i {
+        font-size: 3rem;
+        color: $twitterColor;
+        padding: 1.8rem;
+    }
+
+    &__links {
+        margin-top: 1rem;
+
+        & li {
+            padding: 1.5rem;
+            font-size: 1.8rem;
+            cursor: pointer;
+
+            & i {
+                margin-right: 2rem;
+            }
+        }
+
+        & .activo {
+            color: $twitterColor;
+        }
+    }
+}
+
+.twittear {
+    background-color: $twitterColor;
+    color: $blanco;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    width: 65%;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: .3s;
+
+    &:hover {
+        background-color: $twitterColorHover;
+    }
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__data {
+        display: flex;
+
+        &__imagen img {
+            border-radius: 50%;
+            height: 4.5rem;
+            width: 4.5rem;
+            margin-right: 1rem;
+        }
+
+        &__usuario {
+            margin-top: 5px;
+
+            & span {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            & p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    & i {
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+
