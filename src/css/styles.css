@@ -27,7 +27,8 @@ p {
 
 .header {
   max-width: 275px;
-  width: 100%; }
+  width: 100%;
+  border-right: 1px solid #d6d6d6; }
   @media screen and (max-width: 625px) {
     .header {
       display: none; } }
@@ -102,7 +103,8 @@ p {
 .main {
   max-width: 600px;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  border-right: 1px solid #d6d6d6; }
   @media screen and (max-width: 625px) {
     .main {
       max-width: 100%;
@@ -113,9 +115,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #d6d6d6;
-  border-right: 1px solid #d6d6d6;
-  border-left: 1px solid #d6d6d6; }
+  border-bottom: 1px solid #d6d6d6; }
   .inicio p {
     font-size: 2.3rem;
     font-weight: bold; }
@@ -128,8 +128,6 @@ p {
   padding: 1rem;
   gap: 1rem;
   border-bottom: 1px solid #d6d6d6;
-  border-right: 1px solid #d6d6d6;
-  border-left: 1px solid #d6d6d6;
   height: 15rem; }
   .tweet img {
     border-radius: 50%;
@@ -168,9 +166,7 @@ p {
   flex-direction: column;
   padding: 1.2rem;
   position: relative;
-  border-bottom: 1px solid #d6d6d6;
-  border-right: 1px solid #d6d6d6;
-  border-left: 1px solid #d6d6d6; }
+  border-bottom: 1px solid #d6d6d6; }
   .tweets__contenido {
     display: flex;
     gap: 1rem; }
